@@ -19,4 +19,3 @@ not tolerable outside of a controlled environment.
 
 ECA requires Python 3.2 or higher.
 
-
