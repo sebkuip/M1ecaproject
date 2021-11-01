@@ -37,6 +37,3 @@ def generate_sample(ctx, e):
     # chain event
     fire('sample', {'previous': sample}, delay=0.05)
 
-
-
-
