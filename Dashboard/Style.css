@@ -45,6 +45,9 @@
     transform: translate(-50% , 0%);
     display: block;
     margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: -5px;
 }
 
 .searchBar {
@@ -66,8 +69,7 @@
     font-family: bold 15px arial, sans-serif; 
     text-shadow:none; 
     cursor: pointer;
-    margin-left: -2%;
-    
+    margin-left: -5px;
 }
 
 .logo {
