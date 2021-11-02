@@ -44,7 +44,8 @@
 }
 
 .searchButton {
-    background: #0066A2; 
+    background-image: url("search.svg"); 
+    background: #0066A2;
     color: white; 
     border-style: outset; 
     border-color: #0066A2; 
