@@ -13,6 +13,7 @@
 
 .body{
     background-color: E0E0E0;
+    height: 200%;
 }
 
 .header {
@@ -34,7 +35,7 @@
 }
 
 .search {
-    position: absolute;
+    position: fixed;
     left: 50%;
     transform: translate(-50% , 0%);
     display: block;
@@ -100,6 +101,11 @@
     position: fixed;
 }
 
+.mid{
+    width: 50%;
+
+}
+
 .terms {
     display: block;
     margin: 0;
@@ -108,4 +114,12 @@
 .graph {
     display: block;
     margin-top: 50%;
+}
+
+.box{
+    border: 5px black;
+    background-color: white;
+    width: 15%;
+    padding-left: 80%;
+    height: 25%;
 }
