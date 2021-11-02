@@ -6,19 +6,13 @@ import random
 ## You might have to update the root path to point to the correct path
 ## (by default, it points to <rules>_static)
 root_content_path = 'Dashboard'
-with open("Dashboard/tweets.json", "r", encoding='utf8') as f:
-    tweet_data = json.load(f)
-    print('data loaded')
-
 
 # binds the 'setup' function as the action for the 'init' event
 # the action will be called with the context and the event
 @event('init')
 def setup(ctx, e):
-    ctx.count = 0
-    fire('sample', {'previous': 0.0})
-    print(ctx)
-    print(tweet_data[0])
+    with open("Dashboard/tweets.json", "r", encoding='utf8') as f:
+        ctx.tweet_data = json.load(f)
 
 
 # define a normal Python function
