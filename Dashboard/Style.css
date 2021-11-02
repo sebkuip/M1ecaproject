@@ -38,8 +38,7 @@
     font-size:18; 
     text-align: center; 
     color: #0066A2; 
-    margin-left: 21px; 
-    margin-top: 10px
+
 }
 
 .searchButton {
@@ -51,7 +50,7 @@
     width: 202px; 
     font: bold 15px arial, sans-serif; 
     text-shadow:none; 
-    margin-left: 18px
+    
 }
 
 .logo {
