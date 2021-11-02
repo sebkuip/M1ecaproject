@@ -117,12 +117,13 @@
     margin: 0;
     left: 50%;
     transform: translateX(-50%); 
+    white-space: nowrap;
 }
 
 .graph {
     position: absolute;
     display: block;
-    margin-top: 50%;
+    margin-top: 65%;
     left: 50%;
     transform: translateX(-50%); 
 }
@@ -134,5 +135,5 @@
     width: 15%;
     padding-left: 80%;
     height: 25%;
-    z-index: -1;
+    margin-top: 10%;
 }
