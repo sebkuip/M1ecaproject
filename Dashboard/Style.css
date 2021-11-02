@@ -9,6 +9,10 @@
     position: fixed;
 }
 
+.body{
+    background-color: E0E0E0;
+}
+
 .header {
     top: 1%;
     position: sticky;
