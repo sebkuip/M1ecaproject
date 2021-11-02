@@ -39,6 +39,7 @@
     font-size:18; 
     text-align: center; 
     color: #0066A2; 
+    cursor: pointer;
 }
 
 .searchButton {
@@ -50,6 +51,7 @@
     width: 30px; 
     font: bold 15px arial, sans-serif; 
     text-shadow:none; 
+    cursor: pointer;
     
 }
 
