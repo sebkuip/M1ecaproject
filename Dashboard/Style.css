@@ -2,8 +2,25 @@
     text-align: center;
     font-size: 32;
     font: bold arial, sans-serif; 
+    display: inline;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: fixed;
 }
 
+.header {
+    top: 1%;
+    position: sticky;
+
+}
+.search {
+    top: 4%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: block;
+}
 .searchBar {
     height: 30px; 
     width: 202px; 
@@ -29,4 +46,7 @@
 .logo {
     height: 32px;
     width: 32px;
+    display: inline;
+    position: fixed;
+    top: 1%;
 }
