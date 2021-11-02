@@ -52,6 +52,18 @@
 }
 
 .img{
-    height: 40%;
-    width: 40%;
+    height: 20%;
+    width: 20%;
+}
+
+.pictures{
+margin-left: 10%;
+}
+
+.terms{
+margin-left: 80%;
+}
+
+.graph{
+margin-left: 80%;
 }
