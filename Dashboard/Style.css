@@ -1,7 +1,7 @@
 .title {
     text-align: center;
     font-size: 32;
-    font: bold 32px arial, sans-serif; 
+    font: bold arial, sans-serif; 
 }
 
 .searchBar {
@@ -24,4 +24,9 @@
     font: bold 15px arial, sans-serif; 
     text-shadow:none; 
     margin-left: 18px
+}
+
+.logo {
+    height: 32px;
+    width: 32px;
 }
