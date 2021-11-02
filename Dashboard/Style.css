@@ -7,6 +7,7 @@
     left: 50%;
     transform: translate(-50% , -50%);
     position: fixed;
+    
 }
 
 .body{
@@ -76,21 +77,23 @@
 .img2{
     height: auto;
     width: 100%;
-
+    padding-top: 2%;
 }
 
 .left {
-    padding-top: 10%;
+    padding-top: 5%;
     float: left;
-    width: 33%;
+    width: 25%;
     height: 90%;
+    position: fixed;
 }
 
 .right {
     padding-top: 10%;
-    float: right;
-    width: 33%;
+    right: 0;
+    width: 25%;
     height: 90%;
+    position: fixed;
 }
 
 .terms {
