@@ -1,7 +1,9 @@
+
+
 .title {
     text-align: center;
     font-size: 32;
-    font: bold arial, sans-serif; 
+    font-family: bold arial, sans-serif; 
     display: inline;
     top: 1%;
     left: 50%;
@@ -51,7 +53,7 @@
     border-color: #0066A2; 
     height: 30px; 
     width: 30px; 
-    font: bold 15px arial, sans-serif; 
+    font-family: bold 15px arial, sans-serif; 
     text-shadow:none; 
     cursor: pointer;
     
@@ -70,9 +72,7 @@
     width: 20%;
 }
 
-.pictures{
-margin-left: 10%;
-}
+
 
 .terms{
 margin-right: 5%;
@@ -84,4 +84,5 @@ position: absolute;
     margin-right: 5%;
     right: 0px;
     position: absolute;
+    margin-top: 60%;
 }
