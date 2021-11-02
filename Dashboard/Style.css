@@ -39,8 +39,7 @@
 .searchBar {
     height: 30px; 
     width: 202px; 
-    font-size:18; 
-    text-align: center; 
+    font-size:18;  
     color: #0066A2; 
     cursor: pointer;
 }
