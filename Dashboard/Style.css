@@ -24,14 +24,17 @@
     height: 50px;
     width: 100%;
     margin: 0px;
+    z-index: 1;
 }
 
 .dashboard {
     top: 60px;
     position: absolute;
     display: block;
-    width: 100%;
+    width: 95%;
+    left: 50%;
     height: 94%;
+    transform: translateX(-50%);
 }
 
 .search {
