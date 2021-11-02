@@ -86,3 +86,14 @@ position: absolute;
     position: absolute;
     margin-top: 30%;
 }
+
+.links {
+    display: inline;
+    width: 33%;
+}
+
+.rechts {
+    display: inline;
+    width: 33%;
+    margin-left: 67%;
+}
