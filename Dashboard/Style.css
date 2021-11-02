@@ -34,7 +34,9 @@
     left: 50%;
     transform: translate(-50% , 0%);
     display: block;
+    margin-top: 20px;
 }
+
 .searchBar {
     height: 30px; 
     width: 202px; 
@@ -69,6 +71,12 @@
 .img {
     height: auto;
     width: 100%;
+}
+
+.img2{
+    height: auto;
+    width: 100%;
+
 }
 
 .left {
