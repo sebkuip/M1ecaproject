@@ -14,6 +14,8 @@
 .body{
     background-color: E0E0E0;
     height: 200%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .header {
@@ -107,19 +109,27 @@
 }
 
 .terms {
+    position: absolute;
     display: block;
     margin: 0;
+    left: 50%;
+    transform: translateX(-50%); 
 }
 
 .graph {
+    position: absolute;
     display: block;
     margin-top: 50%;
+    left: 50%;
+    transform: translateX(-50%); 
 }
 
 .box{
+    position: absolute;
     border: 5px black;
     background-color: white;
     width: 15%;
     padding-left: 80%;
     height: 25%;
+    z-index: -1;
 }
