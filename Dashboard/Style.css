@@ -35,6 +35,7 @@
     left: 50%;
     transform: translate(-50% , 0%);
     display: block;
+    margin-top: 5%;
 }
 .searchBar {
     height: 30px; 
