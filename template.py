@@ -4,7 +4,7 @@ import random
 
 ## You might have to update the root path to point to the correct path
 ## (by default, it points to <rules>_static)
-# root_content_path = 'template_static'
+root_content_path = 'Dashboard'
 
 
 # binds the 'setup' function as the action for the 'init' event
