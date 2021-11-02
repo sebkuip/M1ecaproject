@@ -63,6 +63,7 @@
     width: 30px; 
     font-family: bold 15px arial, sans-serif; 
     text-shadow:none; 
+    border-width: 0;
     cursor: pointer;
     margin-left: -5px;
 }
