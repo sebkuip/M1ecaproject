@@ -72,28 +72,14 @@
     width: 20%;
 }
 
-
-
-.terms{
-margin-right: 5%;
-right: 0px;
-position: absolute;
-}
-
-.graph{
-    margin-right: 5%;
-    right: 0px;
-    position: absolute;
-    margin-top: 30%;
-}
-
-.links {
+.left {
     display: inline;
     width: 33%;
 }
 
-.rechts {
+.right {
     display: inline;
     width: 33%;
+    height: 100%;
     margin-left: 67%;
 }
