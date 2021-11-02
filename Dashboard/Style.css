@@ -12,6 +12,7 @@
 
 .body{
     background-color: E0E0E0;
+    height: 200%;
 }
 
 .header {
@@ -33,7 +34,7 @@
 }
 
 .search {
-    position: absolute;
+    position: fixed;
     left: 50%;
     transform: translate(-50% , 0%);
     display: block;
