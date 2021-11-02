@@ -1,5 +1,3 @@
-
-
 .title {
     text-align: center;
     font-size: 32;
@@ -16,14 +14,15 @@
 }
 
 .header {
-    top: 1%;
     position: sticky;
     background-color: white;
+    height: 50px;
+    width: 100%;
 
 }
 
 .dashboard {
-    top: 6%;
+    top: 60px;
     position: absolute;
     display: block;
     width: 100%;
@@ -76,21 +75,21 @@
     padding-top: 10%;
     float: left;
     width: 33%;
-    height: 100%;
+    height: 90%;
 }
 
 .right {
     padding-top: 10%;
     float: right;
     width: 33%;
-    height: 100%;
+    height: 90%;
 }
 
 .terms {
-    display: inline;
+    display: inline-block;
 }
 
 .graph {
-    display: inline;
+    display: inline-block;
     margin-top: 50%;
 }
