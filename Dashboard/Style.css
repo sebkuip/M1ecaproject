@@ -1,12 +1,13 @@
 .title {
     text-align: center;
-    font-size: 32;
+    font-size: 30;
     font-family: bold arial, sans-serif; 
     display: inline;
-    top: 1%;
+    top: 10px;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translateX(-50%);
     position: fixed;
+    margin: 0;
     
 }
 
@@ -64,11 +65,12 @@
 }
 
 .logo {
-    height: 32px;
-    width: 32px;
+    height: 30px;
+    width: 30px;
     display: inline;
     position: fixed;
-    top: 1%;
+    top: 10px;
+    left: 10px;
 }
 
 .img {
@@ -83,15 +85,15 @@
 }
 
 .left {
-    padding-top: 5%;
-    float: left;
+    padding-top: 70px;
+    left: 0;
     width: 25%;
-    height: 90%;
+    height: 200%;
     position: fixed;
 }
 
 .right {
-    padding-top: 10%;
+    padding-top: 70px;
     right: 0;
     width: 25%;
     height: 90%;
@@ -100,6 +102,7 @@
 
 .terms {
     display: block;
+    margin: 0;
 }
 
 .graph {
