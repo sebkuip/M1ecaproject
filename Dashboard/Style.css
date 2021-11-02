@@ -58,11 +58,11 @@
     background-image: url("search.svg"); 
     background: #0066A2;
     color: white;  
-    border-color: #0066A2; 
     height: 30px; 
     width: 30px; 
     font-family: bold 15px arial, sans-serif; 
     text-shadow:none; 
+    border-width: 0;
     cursor: pointer;
     margin-left: -5px;
 }
