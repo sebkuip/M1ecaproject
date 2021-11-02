@@ -99,6 +99,11 @@
     position: fixed;
 }
 
+.mid{
+    width: 50%;
+
+}
+
 .terms {
     display: block;
 }
@@ -106,4 +111,12 @@
 .graph {
     display: block;
     margin-top: 50%;
+}
+
+.box{
+    border: 5px black;
+    background-color: white;
+    width: 15%;
+    padding-left: 80%;
+    height: 25%;
 }
