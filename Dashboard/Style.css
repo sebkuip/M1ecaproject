@@ -1,7 +1,6 @@
 .title {
     text-align: center;
     font-size: 30;
-    font-family: bold arial, sans-serif; 
     display: inline;
     top: 10px;
     left: 50%;
@@ -16,6 +15,7 @@
     height: 200%;
     width: 100%;
     overflow-x: hidden;
+    font-family: bold arial, sans-serif; 
 }
 
 .header {
