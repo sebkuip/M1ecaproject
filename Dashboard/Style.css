@@ -30,13 +30,10 @@
 }
 
 .dashboard {
-    top: 60px;
-    position: absolute;
+    margin-top: 60px;
     display: block;
     width: 100%;
-    left: 50%;
     height: 94%;
-    transform: translateX(-50%);
 }
 
 .search {
