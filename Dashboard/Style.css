@@ -58,7 +58,7 @@
     background-image: url("search.svg"); 
     background: #0066A2;
     color: white;  
-    border-color: #0066A2; 
+    border-width: 0;
     height: 30px; 
     width: 30px; 
     font-family: bold 15px arial, sans-serif; 
