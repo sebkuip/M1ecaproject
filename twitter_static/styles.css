@@ -112,11 +112,11 @@ header{
     flex: 1;
     display: flex;
     flex-direction: column;
-    font-size: 12px;
     font-family: bold arial, sans-serif; 
     text-align: center;
     /* border: 1px solid; */
     margin-top: 10px; 
+    padding-right: 10px;
 
 }
 
@@ -137,16 +137,15 @@ header{
 .display{
     flex: 1;
     /* margin: 10px; */
+    background-color: #E0E0E0;
+    margin-bottom: 15%;
+    margin-right: 10px;
 }
 
 #search_terms{
     width: 100%;
 }
 
-#box{
-    width: 100%;
-
-}
 
 footer {
     text-align: center;
@@ -184,6 +183,7 @@ p {
 }
 
 .word1{
+    margin-left: -10%;
     font-size: 26;
 }
 
@@ -219,6 +219,7 @@ p {
 
 .word8{
     margin-left: 45%;
+    font-size: 20;
 }
 
 /*
