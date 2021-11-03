@@ -1,6 +1,6 @@
 from eca import *
-
 from eca.generators import start_offline_tweets
+from eca.http import GenerateEvent
 import datetime
 import textwrap
 import random
@@ -12,26 +12,27 @@ def setup(ctx, e):
 #    start_offline_tweets('test.txt', time_factor=1, event_name='chirp')
    ctx.count = 0
    ctx.interval = datetime.datetime.now()
+   ctx.keyword = None
    start_offline_tweets('tweets.txt', time_factor=1, event_name='tweetgraph')
 
 @event('chirp')
 def tweet(ctx, e):
    # we receive a tweet
    tweet = e.data
+   if not ctx.keyword or ctx.keyword.lower() in tweet['text'].lower():
+      # parse date
+      time = datetime.datetime.strptime(tweet['created_at'], '%a %b %d %H:%M:%S %z %Y')
 
-   # parse date
-   time = datetime.datetime.strptime(tweet['created_at'], '%a %b %d %H:%M:%S %z %Y')
+      # nicify text
+      text = textwrap.fill(tweet['text'],initial_indent='    ', subsequent_indent='    ')
 
-   # nicify text
-   text = textwrap.fill(tweet['text'],initial_indent='    ', subsequent_indent='    ')
-
-   # generate output
-   output = "[{}] {} (@{}):\n{}".format(time, tweet['user']['name'], tweet['user']['screen_name'], text)
-#    emit('tweet', output)
-   emit('tweet', tweet)
+      # generate output
+      output = "[{}] {} (@{}):\n{}".format(time, tweet['user']['name'], tweet['user']['screen_name'], text)
+   #    emit('tweet', output)
+      emit('tweet', tweet)
 
 @event('tweetgraph')
-def generate_sample(ctx, e):
+def generate_graph(ctx, e):
    delta = datetime.datetime.now() - ctx.interval
    if delta.total_seconds() < 3:
       ctx.count += 1
@@ -42,3 +43,11 @@ def generate_sample(ctx, e):
       })
       ctx.interval = datetime.datetime.now()
       ctx.count = 0
+
+def add_request_handlers(httpd):
+    httpd.add_route('/', GenerateEvent('search'), methods=['POST'])
+
+@event('search')
+def on_search(ctx, e):
+   ctx.keyword = e.data['keyword']
+
