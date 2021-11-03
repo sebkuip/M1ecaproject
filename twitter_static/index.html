@@ -81,30 +81,30 @@
                 </div>
                 <div class="graph">
                     <h1 class="graph_title">Graph</h1>
-                    <div class="display" id="box">
+                    <div class="display" id="graphbox">
+                        <div id="graph0" class="grid_8 vert_4"></div>
+
+                        <script>
+                        // create a rolling chart block
+                        block('#graph0').rolling_chart({
+                            memory: 150,
+                            chart: {
+                                yaxis: {
+                                    min: -100,
+                                    max: 100
+                                },
+                                xaxis: {
+                                    show: false
+                                }
+                            }
+                        });
+        
+                        // connect sample event to graph
+                        events.connect('sample', '#graph0');
+                        </script>
 
                     </div>
                 </div>
-                <div id="graph0" class="grid_8 vert_4"></div>
-
-                <script>
-                // create a rolling chart block
-                block('#graph0').rolling_chart({
-                    memory: 150,
-                    chart: {
-                        yaxis: {
-                            min: -100,
-                            max: 100
-                        },
-                        xaxis: {
-                            show: false
-                        }
-                    }
-                });
-
-                // connect sample event to graph
-                events.connect('sample', '#graph0');
-                </script>
             </div>
         </div>
     </div>
