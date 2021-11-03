@@ -106,11 +106,11 @@ header{
     flex: 1;
     display: flex;
     flex-direction: column;
-    font-size: 12px;
     font-family: bold arial, sans-serif; 
     text-align: center;
     /* border: 1px solid; */
     margin-top: 10px; 
+    padding-right: 10px;
 
 }
 
@@ -133,6 +133,7 @@ header{
     /* margin: 10px; */
     background-color: #E0E0E0;
     margin-bottom: 15%;
+    margin-right: 10px;
 }
 
 #search_terms{
@@ -176,6 +177,7 @@ p {
 }
 
 .word1{
+    margin-left: -10%;
     font-size: 26;
 }
 
@@ -211,6 +213,7 @@ p {
 
 .word8{
     margin-left: 45%;
+    font-size: 20;
 }
 
 /*
