@@ -140,3 +140,56 @@
     height: 25%;
     margin-top: 10%;
 }
+
+.term1{
+    margin-top: 15%;
+    display: inline;  
+}
+
+.term2{
+    margin-top: 20%;  
+    display: inline;
+}
+
+.term3{
+    margin-top: 25%; 
+    display: inline;
+}
+
+.term4{
+    margin-top: 30%;
+    display: inline;
+}
+
+.word1{
+    margin-left: -400%;
+}
+
+.word2{
+    margin-left: 200%;
+}
+
+.word3{
+    margin-left: -300%;
+}
+
+.word4{
+    margin-left: 150%;
+}
+
+.word5{
+    margin-left: -450%;
+}
+
+.word6{
+    margin-left: 200%;
+}
+
+.word7{
+    margin-left: -375%;
+}
+
+.word8{
+    margin-left: 125%;
+}
+
