@@ -29,10 +29,6 @@ def tweet(ctx, e):
 #    emit('tweet', output)
    emit('tweet', tweet)
 
-# define a normal Python function
-def clip(lower, value, upper):
-    return max(lower, min(value, upper))
-
 @event('sample')
 def generate_sample(ctx, e):
     ctx.count += 1
@@ -40,7 +36,7 @@ def generate_sample(ctx, e):
         emit('debug', {'text': 'Log message #'+str(ctx.count)+'!'})
 
     # base sample on previous one
-    sample = clip(-100, e.data['previous'] + random.uniform(+5.0, -5.0), 100)
+    sample = clip(0.1, e.data['previous'] + random.uniform(+1.0, -1.0), 9.9)
 
     # emit to outside world
     emit('sample',{
