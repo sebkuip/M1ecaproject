@@ -4,6 +4,7 @@
 }
 
 header{
+    background-color: white;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -94,7 +95,6 @@ body{
 
 .right{
     flex: 1;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
     font-size: 12px;
