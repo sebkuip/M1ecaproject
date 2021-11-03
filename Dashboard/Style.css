@@ -43,32 +43,31 @@
     margin-top: 20px;
     margin-left: 0;
     margin-right: 0;
-    padding-right: -5px;
 }
 
 .searchBar {
-    height: 30px; 
-    width: 202px; 
-    font-size:18;  
-    color: #0066A2; 
-    cursor: pointer;
-}
-
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
 .searchButton {
-    background-image: url("search.svg"); 
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
     background: #0066A2;
-    color: white;  
-    border-width: 0;
-    border-height: 0;
-    height: 31px; 
-    width: 30px; 
-    font-family: bold 15px arial, sans-serif; 
-    text-shadow:none; 
-    border-width: 0;
+    color: white;
+    font-size: 20px;
+    border: none;
     cursor: pointer;
-    margin-left: -4px;
-    
-}
+    margin-right: -20px;
+  }
+  
+ .searchButton:hover {
+    background: #005485;
+  }
 
 .logo {
     height: 30px;
