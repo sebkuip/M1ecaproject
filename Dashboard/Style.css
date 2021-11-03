@@ -160,34 +160,42 @@
 }
 
 .word1{
-    margin-left: -400%;
+    margin-left: -500%;
+    font-size: 18;
 }
 
 .word2{
     margin-left: 200%;
+    font-size: 22;
 }
 
 .word3{
-    margin-left: -300%;
+    margin-left: -400%;
+    font-size: 26;
 }
 
 .word4{
-    margin-left: 150%;
+    margin-left: 250%;
+    font-size: 20;
 }
 
 .word5{
     margin-left: -450%;
+    font-size: 24;
 }
 
 .word6{
     margin-left: 200%;
+    font-size: 20;
 }
 
 .word7{
     margin-left: -375%;
+    font-size: 18;
 }
 
 .word8{
     margin-left: 125%;
+    font-size: 22;
 }
 
