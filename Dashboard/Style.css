@@ -202,5 +202,8 @@ p {
     width: 100%;
 }
 footer {
-    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
