@@ -131,16 +131,14 @@ header{
 .display{
     flex: 1;
     /* margin: 10px; */
+    background-color: #E0E0E0;
+    margin-bottom: 15%;
 }
 
 #search_terms{
     width: 100%;
 }
 
-#box{
-    width: 100%;
-
-}
 
 footer {
     text-align: center;
