@@ -213,4 +213,17 @@ p {
 
 .word8{
     margin-left: 45%;
-    
+}
+
+/*
+.box {
+position: absolute;
+    border: 5px black;
+    background-color: grey;
+    display: flex;
+    width: 95%;
+    height: 30%;
+    margin-top: 10%;
+    right: 10px;
+}
+*/
