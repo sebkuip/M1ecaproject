@@ -13,7 +13,7 @@
 .body{
     background-color: E0E0E0;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: bold arial, sans-serif; 
 }
 
