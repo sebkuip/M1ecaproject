@@ -80,13 +80,7 @@
     left: 10px;
 }
 
-.img {
-    height: auto;
-    width: 100%;
-    padding-left: 10px;
-}
-
-.img2{
+.img{
     height: auto;
     width: 100%;
     padding-top: 2%;
@@ -114,7 +108,7 @@
 
 }
 
-.terms {
+.subtitle {
     position: absolute;
     display: block;
     margin: 0;
@@ -123,22 +117,14 @@
     white-space: nowrap;
 }
 
-.graph {
-    position: absolute;
-    display: block;
-    margin-top: 70%;
-    left: 50%;
-    transform: translateX(-50%); 
-}
 
 .box{
     position: absolute;
     border: 5px black;
     background-color: white;
-    width: 15%;
-    padding-left: 80%;
-    height: 25%;
-    margin-top: 10%;
+    width: 95%;
+    height: 30%;
+    margin-top: 20%;
 }
 
 a {
@@ -171,7 +157,6 @@ p {
 }
 
 .word1{
-    margin-left: -500%;
     font-size: 18;
 }
 
@@ -181,7 +166,7 @@ p {
 }
 
 .word3{
-    margin-left: -350%;
+    margin-left: -65%;
     font-size: 26;
 }
 
@@ -191,7 +176,7 @@ p {
 }
 
 .word5{
-    margin-left: -450%;
+    margin-left: -75%;
     font-size: 24;
 }
 
@@ -201,7 +186,7 @@ p {
 }
 
 .word7{
-    margin-left: -375%;
+    margin-left: -85%;
     font-size: 18;
 }
 
@@ -210,3 +195,9 @@ p {
     font-size: 16;
 }
 
+.rightbox{
+    text-align: center;
+    border: 10px red;
+    height: 50%;
+    width: 100%;
+}
