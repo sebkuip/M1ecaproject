@@ -59,13 +59,15 @@
     background: #0066A2;
     color: white;  
     border-width: 0;
-    height: 30px; 
+    border-height: 0;
+    height: 31px; 
     width: 30px; 
     font-family: bold 15px arial, sans-serif; 
     text-shadow:none; 
     border-width: 0;
     cursor: pointer;
-    margin-left: -5px;
+    margin-left: -4px;
+    
 }
 
 .logo {
