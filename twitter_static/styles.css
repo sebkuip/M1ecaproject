@@ -193,56 +193,44 @@ p {
 
 .word1{
     margin-left: -10%;
-    font-size: 26;
+    font-size: 26px;
 }
 
 .word2{
     margin-left: 20%;
-    font-size: 18;
+    font-size: 18px;
 }
 
 .word3{
     margin-left: -5%;
-    font-size: 20;
+    font-size: 20px;
 }
 
 .word4{
     margin-left: 35%;
-    font-size: 22;
+    font-size: 22px;
 }
 
 .word5{
     margin-left: -15%;
-    font-size: 20;
+    font-size: 20px;
 }
 
 .word6{
     margin-left: 10%;
-    font-size: 20;
+    font-size: 20px;
 }
 
 .word7{
     margin-left: -10%;
-    font-size: 22;
+    font-size: 22px;
 }
 
 .word8{
     margin-left: 45%;
-    font-size: 20;
+    font-size: 20px;
 }
 
-/*
-.box {
-position: absolute;
-    border: 5px black;
-    background-color: grey;
-    display: flex;
-    width: 95%;
-    height: 30%;
-    margin-top: 10%;
-    right: 10px;
-}
-*/
 
 #graph0{
 
