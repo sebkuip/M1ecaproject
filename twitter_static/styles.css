@@ -303,6 +303,8 @@ p {
     margin: -1px;
     display: inline;
     border-radius: 10px;
+    width: 50px;
+    margin-top: 8px;
   }
 
   textarea {
