@@ -40,14 +40,16 @@ def tweet(ctx, e):
 def generate_graph(ctx, e):
    delta = datetime.datetime.now() - ctx.interval
    if delta.total_seconds() < 3:
-      ctx.count += 1
+      tweet = e.data
+      if not ctx.keyword or ctx.keyword.lower() in tweet['text'].lower():
+         ctx.count += 1
    else:   
       emit('tweetgraph',{
          'action': 'add',
          'value': ctx.count
       })
       ctx.interval = datetime.datetime.now()
-      ctx.count = 0
+      ctx.count = 0.0001
 
 @event('search')
 def on_search(ctx, e):
