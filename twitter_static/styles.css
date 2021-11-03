@@ -75,30 +75,35 @@ header{
 }
 
 .searchBar {
-    padding: 6px;
+    padding: 6px 10px;
     margin-top: 8px;
     font-size: 17px;
     border: none;
+    border-radius: 20px 0 0 20px;
   }
   
 .searchButton {
-    /* float: right; */
+    float: right;
     padding: 6px 10px;
     margin-top: 8px;
-    background: #0066A2;
+    background: #1C9BEB;
     color: white;
     font-size: 20px;
     border: none;
     cursor: pointer;
+    border-radius: 0 20px 20px 0;
   }
   
  .searchButton:hover {
     background: #005485;
   }
 
+  .searchBar:focus {
+      border-color: #1C9BEB;
+  }
+
 .right{
     flex: 1;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
     font-size: 12px;
@@ -124,7 +129,6 @@ header{
 }
 
 .display{
-    border: 1px solid red;
     flex: 1;
     /* margin: 10px; */
 }
@@ -143,3 +147,70 @@ footer {
     margin: auto;
     width: fit-content;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #444;
+}
+
+p {
+    display: inline;
+}
+
+.term1{
+    margin-top: 15%;
+}
+
+.term2{
+    margin-top: 20%;  
+}
+
+.term3{
+    margin-top: 25%; 
+}
+
+.term4{
+    margin-top: 30%;
+}
+
+.word1{
+    font-size: 26;
+}
+
+.word2{
+    margin-left: 20%;
+    font-size: 18;
+}
+
+.word3{
+    margin-left: -5%;
+    font-size: 20;
+}
+
+.word4{
+    margin-left: 35%;
+    font-size: 22;
+}
+
+.word5{
+    margin-left: -15%;
+    font-size: 20;
+}
+
+.word6{
+    margin-left: 10%;
+    font-size: 20;
+}
+
+.word7{
+    margin-left: -10%;
+    font-size: 22;
+}
+
+.word8{
+    margin-left: 45%;
+    
