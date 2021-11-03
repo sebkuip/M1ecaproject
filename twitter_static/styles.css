@@ -43,6 +43,11 @@ header{
     margin: 0;
 }
 
+.title:hover{
+    colr: white;
+    cursor: pointer;
+}
+
 .dashboard {
     height: 90vh;
     width: 100%;
