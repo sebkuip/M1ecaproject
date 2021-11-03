@@ -139,6 +139,15 @@
     margin-top: 10%;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #444;
+}
+
 .term1{
     margin-top: 15%;
     display: inline;  
