@@ -289,20 +289,11 @@ p {
   .intervalbutton{
     background-color: #1C9BEB;
     color: #FFFFFF;
-    padding: 6px 10px;
-    font-size: 17px;
+    padding: 5px 10px;
+    font-size: 14px;
     border: none;
     cursor: pointer;
     margin: -1px;
     display: inline;
     border-radius: 10px;
   }
-
-  /*#btn1 {
-      border-radius: 20px 0 0 20px;
-  }
-
-  #btn4 {
-      border-radius: 0 20px 20px 0;;
-  }
-  */
