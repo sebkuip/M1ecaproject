@@ -13,7 +13,7 @@
 .body{
     background-color: E0E0E0;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: bold arial, sans-serif; 
 }
 
@@ -46,10 +46,11 @@
 }
 
 .searchBar {
-    padding: 6px;
+    padding: 6px 10px;
     margin-top: 8px;
     font-size: 17px;
     border: none;
+    border-radius: 20px 0 0 20px;
   }
   
 .searchButton {
@@ -61,6 +62,7 @@
     font-size: 20px;
     border: none;
     cursor: pointer;
+    border-radius: 0 20px 20px 0;
   }
   
  .searchButton:hover {
@@ -197,10 +199,12 @@ p {
 
 .rightbox{
     text-align: center;
-    border: 10px red;
     height: 50%;
     width: 100%;
 }
 footer {
-    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
