@@ -90,6 +90,7 @@ header{
     padding: 6px 10px;
     margin-top: 8px;
     font-size: 17px;
+    height: 20px;
     border: none;
     border-radius: 20px 0 0 20px;
     background-color: #F0F0F0;
@@ -296,4 +297,8 @@ p {
     margin: -1px;
     display: inline;
     border-radius: 10px;
+  }
+
+  textarea {
+    resize: none;
   }
