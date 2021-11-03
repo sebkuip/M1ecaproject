@@ -302,3 +302,7 @@ p {
   textarea {
     resize: none;
   }
+
+  textarea:focus, input:focus{
+    outline: 0;
+}
