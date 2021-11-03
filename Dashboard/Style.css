@@ -56,7 +56,7 @@
     float: right;
     padding: 6px 10px;
     margin-top: 8px;
-    background: #0066A2;
+    background: #1C9BEB;
     color: white;
     font-size: 20px;
     border: none;
@@ -65,6 +65,10 @@
   
  .searchButton:hover {
     background: #005485;
+  }
+
+  .searchBar:focus {
+      border-color: #1C9BEB;
   }
 
 .logo {
@@ -132,24 +136,24 @@ a:hover {
     color: #444;
 }
 
+p {
+    display: inline;
+}
+
 .term1{
-    margin-top: 20%;
-    display: inline;  
+    margin-top: 15%;
 }
 
 .term2{
-    margin-top: 30%;  
-    display: inline;
+    margin-top: 20%;  
 }
 
 .term3{
-    margin-top: 40%; 
-    display: inline;
+    margin-top: 25%; 
 }
 
 .term4{
-    margin-top: 50%;
-    display: inline;
+    margin-top: 30%;
 }
 
 .word1{
@@ -157,37 +161,37 @@ a:hover {
 }
 
 .word2{
-    margin-left: 20%;
+    margin-left: 200%;
     font-size: 22;
 }
 
 .word3{
-    margin-left: -30%;
+    margin-left: -65%;
     font-size: 26;
 }
 
 .word4{
-    margin-left: 15%;
+    margin-left: 50%;
     font-size: 20;
 }
 
 .word5{
-    margin-left: -10%;
+    margin-left: -75%;
     font-size: 24;
 }
 
 .word6{
-    margin-left: 35%;
+    margin-left: 180%;
     font-size: 20;
 }
 
 .word7{
-    margin-left: -15%;
+    margin-left: -85%;
     font-size: 18;
 }
 
 .word8{
-    margin-left: 30%;
+    margin-left: 125%;
     font-size: 16;
 }
 
