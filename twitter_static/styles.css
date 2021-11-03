@@ -9,7 +9,9 @@ body{
 }
 
 header{
-    height: 10vh;
+    height: 7vh;
+    background-color: black;
+    color: white;
     display: flex;
     align-items: center;
     width: 100%;
@@ -21,14 +23,18 @@ header{
     width: 30px;
     /* padding: 5px; */
     margin-left: 5px;
+    color: white;
 }
 
 .title{
-    flex: 1;
+    flex: 2;
     justify-self: center;
-    text-align: center;
     font-family: bold arial, sans-serif; 
     font-size: 30px;
+    width: 50%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .dashboard {
