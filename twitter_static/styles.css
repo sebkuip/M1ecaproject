@@ -127,7 +127,7 @@ header{
 }
 
 .popular{
-    flex: 1;
+    flex: 0.;
     display: flex;
     flex-direction: column;
 
@@ -287,7 +287,19 @@ p {
   }
 
   .intervalbutton{
-    font-size: 17px;
+    background-color: #1C9BEB;
+    color: #FFFFFF;
     padding: 6px 10px;
-    margin-top: 100px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    margin: -1px;
+  }
+
+  #btn1 {
+      border-radius: 20px 0 0 20px;
+  }
+
+  #btn4 {
+      border-radius: 0 20px 20px 0;;
   }
