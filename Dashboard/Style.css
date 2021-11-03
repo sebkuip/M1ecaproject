@@ -133,22 +133,22 @@ a:hover {
 }
 
 .term1{
-    margin-top: 15%;
+    margin-top: 20%;
     display: inline;  
 }
 
 .term2{
-    margin-top: 20%;  
+    margin-top: 30%;  
     display: inline;
 }
 
 .term3{
-    margin-top: 25%; 
+    margin-top: 40%; 
     display: inline;
 }
 
 .term4{
-    margin-top: 30%;
+    margin-top: 50%;
     display: inline;
 }
 
@@ -157,37 +157,37 @@ a:hover {
 }
 
 .word2{
-    margin-left: 200%;
+    margin-left: 20%;
     font-size: 22;
 }
 
 .word3{
-    margin-left: -65%;
+    margin-left: -30%;
     font-size: 26;
 }
 
 .word4{
-    margin-left: 50%;
+    margin-left: 15%;
     font-size: 20;
 }
 
 .word5{
-    margin-left: -75%;
+    margin-left: -10%;
     font-size: 24;
 }
 
 .word6{
-    margin-left: 180%;
+    margin-left: 35%;
     font-size: 20;
 }
 
 .word7{
-    margin-left: -85%;
+    margin-left: -15%;
     font-size: 18;
 }
 
 .word8{
-    margin-left: 125%;
+    margin-left: 30%;
     font-size: 16;
 }
 
