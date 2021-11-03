@@ -4,7 +4,6 @@ from eca.generators import start_offline_tweets
 import datetime
 import textwrap
 import random
-import datetime
 
 
 @event('init')
