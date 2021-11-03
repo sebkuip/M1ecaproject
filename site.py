@@ -11,7 +11,7 @@ root_content_path = 'Dashboard'
 # the action will be called with the context and the event
 @event('init')
 def setup(ctx, e):
-    with open("Dashboard/tweets.json", "r", encoding='utf8') as f:
+    with open("Dashboard/tweets.txt", "r", encoding='utf8') as f:
         ctx.tweet_data = json.load(f)
 
 
