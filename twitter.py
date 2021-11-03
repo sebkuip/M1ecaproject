@@ -6,8 +6,8 @@ import textwrap
 
 @event('init')
 def setup(ctx, e):
-   start_offline_tweets('sports_tweets.txt', time_factor=100000, event_name='chirp')
-#    start_offline_tweets('test.txt', time_factor=100000, event_name='chirp')
+   start_offline_tweets('tweets.txt', time_factor=1, event_name='chirp')
+#    start_offline_tweets('test.txt', time_factor=1, event_name='chirp')
 
 @event('chirp')
 def tweet(ctx, e):
@@ -22,6 +22,5 @@ def tweet(ctx, e):
 
    # generate output
    output = "[{}] {} (@{}):\n{}".format(time, tweet['user']['name'], tweet['user']['screen_name'], text)
-   print("tweet", output)
 #    emit('tweet', output)
    emit('tweet', tweet)
