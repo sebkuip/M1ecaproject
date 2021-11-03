@@ -5,6 +5,11 @@ import datetime
 import textwrap
 import random
 
+def add_request_handlers(httpd):
+   httpd.add_route('/', GenerateEvent('search'), methods=['POST'])
+
+   httpd.add_content('/lib/', 'twitter_static/lib')
+   httpd.add_content('/style/', 'twitter_static/style')
 
 @event('init')
 def setup(ctx, e):
@@ -44,10 +49,7 @@ def generate_graph(ctx, e):
       ctx.interval = datetime.datetime.now()
       ctx.count = 0
 
-def add_request_handlers(httpd):
-    httpd.add_route('/', GenerateEvent('search'), methods=['POST'])
-
 @event('search')
 def on_search(ctx, e):
-   ctx.keyword = e.data['keyword']
+   ctx.keyword = e.data['search']
 

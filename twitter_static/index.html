@@ -18,6 +18,7 @@
     <script src="/lib/core.js"></script>
     <script src="/lib/charts.js"></script>
     <script src="/lib/log.js"></script>
+    <script src="/lib/form.js"></script>
     <script src="lib/tweets.js"></script>
 </head>
 
@@ -35,12 +36,27 @@
         </div>
       </header>
     <div class="dashboard">
-        <div id='form' class="search">
-    <form>
-        <textarea type="text" name="search" placeholder="Search..." class="searchBar"></textarea>
-        <button type="submit" value="" class="searchButton"><i class="fa fa-search"></i></button>
-    </form>
-</div>
+        <div id="form" class="search">
+            <form>
+                <textarea id='searchtext' type="text" name="search" placeholder="Search..." class="searchBar"></textarea>
+                <button type="submit" value="" class="searchButton"><i class="fa fa-search"></i></button>
+            </form>
+                <script>
+                    block('#form').form({
+                        target: '/',
+                        callback: function() {
+                            $('textarea').val('');
+                        }
+                    });
+
+                    // small usability tweak
+                    $('searchtext').keydown(function(e) {
+                        if((e.which == 10 || e.which == 13) && e.ctrlKey) {
+                            $('#form input[type="submit"]').click();
+                        }
+                    });
+                </script>
+        </div>
         <div class="dropdown">
             <button class="dropbtn">Filter</button>
             <div class="dropdown-content">
@@ -133,23 +149,6 @@
     <script>
         block('#tweets').tweets({memory: 8});
         events.connect('tweet', '#tweets');
-
-        block('#messages').log();
-events.connect('message', '#messages');
-
-block('#form').form({
-    target: '/api/message',
-    callback: function() {
-        $('textarea').val('');
-    }
-});
-
-// small usability tweak
-$('textarea').keydown(function(e) {
-    if((e.which == 10 || e.which == 13) && e.ctrlKey) {
-        $('#form input[type="submit"]').click();
-    }
-});
     </script>
 
 </body>
