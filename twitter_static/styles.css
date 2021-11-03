@@ -295,12 +295,14 @@ p {
     cursor: pointer;
     margin: -1px;
     display: inline;
+    border-radius: 10px;
   }
 
-  #btn1 {
+  /*#btn1 {
       border-radius: 20px 0 0 20px;
   }
 
   #btn4 {
       border-radius: 0 20px 20px 0;;
   }
+  */
