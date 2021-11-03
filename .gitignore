@@ -3,4 +3,4 @@ data/*
 *.swp
 *.swo
 *~
-Dashboard/tweets.json
+Dashboard/tweets.txt
