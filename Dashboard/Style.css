@@ -56,7 +56,7 @@
     float: right;
     padding: 6px 10px;
     margin-top: 8px;
-    background: #0066A2;
+    background: #1C9BEB;
     color: white;
     font-size: 20px;
     border: none;
@@ -65,6 +65,10 @@
   
  .searchButton:hover {
     background: #005485;
+  }
+
+  .searchBar:focus {
+      border-color: #1C9BEB;
   }
 
 .logo {
@@ -146,24 +150,24 @@ a:hover {
     color: #444;
 }
 
+p {
+    display: inline;
+}
+
 .term1{
     margin-top: 15%;
-    display: inline;  
 }
 
 .term2{
     margin-top: 20%;  
-    display: inline;
 }
 
 .term3{
     margin-top: 25%; 
-    display: inline;
 }
 
 .term4{
     margin-top: 30%;
-    display: inline;
 }
 
 .word1{
