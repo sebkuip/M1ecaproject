@@ -4,3 +4,4 @@ data/*
 *.swo
 *~
 Dashboard/tweets.txt
+tweets.txt
