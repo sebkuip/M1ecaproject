@@ -3,11 +3,15 @@ from eca import *
 from eca.generators import start_offline_tweets
 import datetime
 import textwrap
+import random
+
 
 @event('init')
 def setup(ctx, e):
    start_offline_tweets('tweets.txt', time_factor=1, event_name='chirp')
 #    start_offline_tweets('test.txt', time_factor=1, event_name='chirp')
+   ctx.count = 0
+   fire('sample', {'previous': 0.0}) 
 
 @event('chirp')
 def tweet(ctx, e):
@@ -24,3 +28,25 @@ def tweet(ctx, e):
    output = "[{}] {} (@{}):\n{}".format(time, tweet['user']['name'], tweet['user']['screen_name'], text)
 #    emit('tweet', output)
    emit('tweet', tweet)
+
+# define a normal Python function
+def clip(lower, value, upper):
+    return max(lower, min(value, upper))
+
+@event('sample')
+def generate_sample(ctx, e):
+    ctx.count += 1
+    if ctx.count % 50 == 0:
+        emit('debug', {'text': 'Log message #'+str(ctx.count)+'!'})
+
+    # base sample on previous one
+    sample = clip(-100, e.data['previous'] + random.uniform(+5.0, -5.0), 100)
+
+    # emit to outside world
+    emit('sample',{
+        'action': 'add',
+        'value': sample
+    })
+
+    # chain event
+    fire('sample', {'previous': sample}, delay=0.05)
