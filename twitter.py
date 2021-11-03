@@ -11,7 +11,7 @@ def setup(ctx, e):
    start_offline_tweets('tweets.txt', time_factor=1, event_name='chirp')
 #    start_offline_tweets('test.txt', time_factor=1, event_name='chirp')
    ctx.count = 0
-   fire('sample', {'previous': 0.0}) 
+   start_offline_tweets('tweets.txt', time_factor=1, event_name='tweetgraph')
 
 @event('chirp')
 def tweet(ctx, e):
@@ -33,7 +33,7 @@ def tweet(ctx, e):
 def clip(lower, value, upper):
     return max(lower, min(value, upper))
 
-@event('sample')
+@event('tweetgraph')
 def generate_sample(ctx, e):
     ctx.count += 1
     if ctx.count % 50 == 0:
@@ -43,10 +43,10 @@ def generate_sample(ctx, e):
     sample = clip(-100, e.data['previous'] + random.uniform(+5.0, -5.0), 100)
 
     # emit to outside world
-    emit('sample',{
+    emit('tweetgraph',{
         'action': 'add',
         'value': sample
     })
 
     # chain event
-    fire('sample', {'previous': sample}, delay=0.05)
+    fire('tweetgraph', {'previous': sample}, delay=0.05)
