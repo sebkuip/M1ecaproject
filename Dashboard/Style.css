@@ -60,13 +60,14 @@
     color: white;  
     border-width: 0;
     border-height: 0;
-    height: 31px; 
+    height: 30px; 
     width: 30px; 
     font-family: bold 15px arial, sans-serif; 
     text-shadow:none; 
     border-width: 0;
     cursor: pointer;
     margin-left: -4px;
+    margin-top: -1px;
     
 }
 
