@@ -15,7 +15,7 @@ def add_request_handlers(httpd):
 def setup(ctx, e):
    start_offline_tweets('tweets.txt', time_factor=1, event_name='chirp')
 #    start_offline_tweets('test.txt', time_factor=1, event_name='chirp')
-   ctx.count = 0.001
+   ctx.count = 0.0001
    ctx.interval = datetime.datetime.now()
    ctx.keyword = None
    start_offline_tweets('tweets.txt', time_factor=1, event_name='tweetgraph')
