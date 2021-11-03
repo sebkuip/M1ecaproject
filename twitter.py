@@ -29,24 +29,11 @@ def tweet(ctx, e):
 #    emit('tweet', output)
    emit('tweet', tweet)
 
-# define a normal Python function
-def clip(lower, value, upper):
-    return max(lower, min(value, upper))
-
 @event('tweetgraph')
 def generate_sample(ctx, e):
     ctx.count += 1
-    if ctx.count % 50 == 0:
-        emit('debug', {'text': 'Log message #'+str(ctx.count)+'!'})
-
-    # base sample on previous one
-    sample = clip(0.1, e.data['previous'] + random.uniform(+1.0, -1.0), 9.9)
-
-    # emit to outside world
+    tweet = e.data
     emit('tweetgraph',{
         'action': 'add',
-        'value': sample
+        'value': ctx.count
     })
-
-    # chain event
-    fire('tweetgraph', {'previous': sample}, delay=0.05)
