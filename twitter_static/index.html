@@ -41,11 +41,10 @@
             <button type="submit" value="" class="searchButton"><i class="fa fa-search"></i></button>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
+            <button class="dropbtn">Filter</button>
             <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Most Popular</a>
+            <a href="#">Most recent</a>
             </div>
             </div>
         <div class="content">
@@ -92,6 +91,7 @@
                           </div>
                     </div>
                 </div>
+            
                 <div class="graph">
                     <h1 class="graph_title">Graph</h1>
                         <div id="graph0" class="grid_8 vert_4"></div>
@@ -114,6 +114,12 @@
                         // connect sample event to graph
                         events.connect('tweetgraph', '#graph0');
                         </script>
+                        <div>
+                        <button class="intervalbutton">1</button>
+                        <button class="intervalbutton">2</button>
+                        <button class="intervalbutton">5</button>
+                        <button class="intervalbutton">10</button>
+                        </div>
                 </div>
             </div>
         </div>
