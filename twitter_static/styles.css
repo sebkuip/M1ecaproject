@@ -294,6 +294,7 @@ p {
     border: none;
     cursor: pointer;
     margin: -1px;
+    display: inline;
   }
 
   #btn1 {
