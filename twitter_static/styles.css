@@ -41,7 +41,7 @@ header{
     transform: translateX(-50%);
     position: fixed;
     margin: 0;
-    
+    color: white;
 }
 
 .title:hover{
