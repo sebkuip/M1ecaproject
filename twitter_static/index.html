@@ -149,6 +149,15 @@
     <script>
         block('#tweets').tweets({memory: 8});
         events.connect('tweet', '#tweets');
+
+
+        $("textarea").keypress(function (e) {
+    if(e.which === 13 && !e.shiftKey) {
+        e.preventDefault();
+    
+        $(this).closest("form").submit();
+    }
+});
     </script>
 
 </body>
