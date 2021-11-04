@@ -3,6 +3,10 @@ from eca.generators import start_offline_tweets
 from eca.http import GenerateEvent
 import datetime
 import textwrap
+import re
+
+# allowed words for wordcloud
+allowed_words = ['football', 'rugby', 'soccer', 'basketball', 'volleyball', 'baseball', 'tennis', 'cricket']
 
 def add_request_handlers(httpd):
    httpd.add_route('/', GenerateEvent('search'), methods=['POST'])
@@ -37,6 +41,17 @@ def tweet(ctx, e):
    #    emit('tweet', output)
       emit('tweet', tweet)
 
+   # send words to wordcloud
+   text = tweet['text']
+   words = re.split('\W+', text)
+   words = map(lambda word: word.lower(), words)
+   words = filter(lambda word: word in allowed_words, words)
+   for word in words:
+      emit('popularword', {
+         'action': 'add',
+         'value': (word, 1)
+      })
+
 @event('tweetgraph')
 def generate_graph(ctx, e):
    delta = datetime.datetime.now() - ctx.interval
@@ -59,5 +74,4 @@ def on_search(ctx, e):
 
 @event('intervalbtn')
 def set_interval(ctx,e):
-   print(e)
    ctx.intervalgraph = int(e.data['intervalbutton'])

@@ -17,6 +17,8 @@
     <script src="/lib/jquery.flot.min.js"></script>
     <script src="/lib/core.js"></script>
     <script src="/lib/charts.js"></script>
+    <script src="lib/wordcloud.js"></script>
+    <script src="/lib/jqcloud-1.0.4.js"></script>
     <script src="/lib/log.js"></script>
     <script src="/lib/form.js"></script>
     <script src="lib/tweets.js"></script>
@@ -82,31 +84,19 @@
             <div class="right">
                 <div class="popular">
                     <h1 class="popular_title">Popular Search Terms</h1>
-                    <div class="display" id="search_terms">
-                        <div class="box">
-                            <br>
-                          <p class="term1 word1"><a href="Football">Football</a>
-                          </p>
-                          <p class="term1 word2"><a href="Rugby">Rugby</a>
-                          </p>
-                          <br> <br>
-                          <p class="term2 word3"><a href="Soccer">Soccer</a>
-                          </p>
-                          <p class="term2 word4"><a href="Basketball">Basketball</a>
-                          </p>
-                          <br> <br>
-                          <p class="term3 word5"><a href="Volleyball">Volleyball</a>
-                          </p>
-                          <p class="term3 word6"><a href="Baseball">Baseball</a>
-                          </p>
-                          <br> <br>
-                          <p class="term4 word7"><a href="Tennis">Tennis</a>
-                          </p>
-                            <p class="term4 word8"><a href="Cricket">Cricket</a>
-                          </p>
-                          
-                          </div>
+                    <div class="grid_8 vert_4" id="search_terms">
                     </div>
+                    <script>
+                        block('#search_terms').wordcloud({
+                            filter_function: function(cat, val, max) {
+                                return val >= 1;
+                            },
+                            weight_function: function(cat, val, max) {
+                                return val;
+                            }
+                        });
+                        events.connect('popularword', '#search_terms');
+                    </script>
                 </div>
             
                 <div class="graph">
