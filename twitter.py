@@ -18,6 +18,7 @@ def setup(ctx, e):
    ctx.count = 0.0001
    ctx.interval = datetime.datetime.now()
    ctx.keyword = None
+   ctx.intervalgraph = 3
    start_offline_tweets('tweets.txt', time_factor=1, event_name='tweetgraph')
 
 @event('chirp')
@@ -39,7 +40,7 @@ def tweet(ctx, e):
 @event('tweetgraph')
 def generate_graph(ctx, e):
    delta = datetime.datetime.now() - ctx.interval
-   if delta.total_seconds() < 3:
+   if delta.total_seconds() < ctx.intervalgraph:
       tweet = e.data
       if not ctx.keyword or ctx.keyword.lower() in tweet['text'].lower():
          ctx.count += 1
@@ -55,3 +56,13 @@ def generate_graph(ctx, e):
 def on_search(ctx, e):
    ctx.keyword = e.data['search']
 
+def add_request_handlers(httpd):
+   httpd.add_route('/graph', GenerateEvent('intervalbtn'), methods=['POST'])
+
+   httpd.add_content('/lib/', 'twitter_static/lib')
+   httpd.add_content('/style/', 'twitter_static/style')
+
+@event('intervalbtn')
+def set_interval(ctx,e):
+   print(e.data['intervalbtn'])
+   ctx.intervalgraph = int(e.data['intervalbtn'])

@@ -111,13 +111,21 @@
             
                 <div class="graph">
                     <h1 style="display: inline; width: fit-content; margin-left: 10px;">Graph</h1>
-                    <div style="width: fit-content; display: inline; position: absolute; right: 20px;">
+                    <div id= "intervalbtns" style="width: fit-content; display: inline; position: absolute; right: 20px;">
                         <form>
                             <input type="submit" id="btn1" name="intervalbtn" class="intervalbutton" value="1">
                             <input type="submit" id="btn2" name="intervalbtn" class="intervalbutton" value="3">
                             <input type="submit" id="btn3" name="intervalbtn" class="intervalbutton" value="5">
                             <input type="submit" id="btn4" name="intervalbtn" class="intervalbutton" value="10">
                         </form>
+                        <script>
+                            block('#intervalbtns').form({
+                        target: '/graph',
+                        callback: function() {
+                            $('textarea').val('');
+                        }
+                    });
+                        </script>
                         </div>
                         <div id="graph0" class="grid_8 vert_4"></div>
 
