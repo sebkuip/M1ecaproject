@@ -3,10 +3,10 @@ from eca.generators import start_offline_tweets
 from eca.http import GenerateEvent
 import datetime
 import textwrap
-import random
 
 def add_request_handlers(httpd):
    httpd.add_route('/', GenerateEvent('search'), methods=['POST'])
+   httpd.add_route('/graph', GenerateEvent('intervalbtn'), methods=['POST'])
 
    httpd.add_content('/lib/', 'twitter_static/lib')
    httpd.add_content('/style/', 'twitter_static/style')
@@ -59,5 +59,5 @@ def on_search(ctx, e):
 
 @event('intervalbtn')
 def set_interval(ctx,e):
-   print(e.data['intervalbtn'])
-   ctx.intervalgraph = int(e.data['intervalbtn'])
+   print(e.data['intervalbutton'])
+   ctx.intervalgraph = int(e.data['intervalbutton'])

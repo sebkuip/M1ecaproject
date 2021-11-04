@@ -113,44 +113,41 @@
                     <h1 style="display: inline; width: fit-content; margin-left: 10px;">Graph</h1>
                     <div id= "intervalbtns" style="width: fit-content; display: inline; position: absolute; right: 20px;">
                         <form>
-                            <input type="submit" id="btn1" class="intervalbutton" value="1">
-                            <input type="submit" id="btn2" class="intervalbutton" value="3">
-                            <input type="submit" id="btn3" class="intervalbutton" value="5">
-                            <input type="submit" id="btn4" class="intervalbutton" value="10">
+                            <input type="submit" name="intervalbutton" id="btn1" class="intervalbutton" value="1">
+                            <input type="submit" name="intervalbutton" id="btn2" class="intervalbutton" value="3">
+                            <input type="submit" name="intervalbutton" id="btn3" class="intervalbutton" value="5">
+                            <input type="submit" name="intervalbutton" id="btn4" class="intervalbutton" value="10">
                         </form>
-                        <!--<script>
+                        <script>
                             block('#intervalbtns').form({
-                        target: '/graph',
-                        callback: function() {
-                            $('textarea').val('');
+                                target: '/graph'
+                            });
+                        </script>
+                    </div>
+                    <div id="graph0" class="grid_8 vert_4"></div>
+
+                    <script>
+                    // create a rolling chart block
+                    block('#graph0').rolling_chart({
+                        memory: 150,
+                        chart: {
+                            yaxis: {
+                                min: 0,
+                                max: 1000
+                            },
+                            xaxis: {
+                                show: false
+                            }
                         }
                     });
-                        </script>-->
-                        </div>
-                        <div id="graph0" class="grid_8 vert_4"></div>
-
-                        <script>
-                        // create a rolling chart block
-                        block('#graph0').rolling_chart({
-                            memory: 150,
-                            chart: {
-                                yaxis: {
-                                    min: 0,
-                                    max: 1000
-                                },
-                                xaxis: {
-                                    show: false
-                                }
-                            }
-                        });
-        
-                        // connect sample event to graph
-                        events.connect('tweetgraph', '#graph0');
-                        </script>
+    
+                    // connect sample event to graph
+                    events.connect('tweetgraph', '#graph0');
+                    </script>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <footer>
         <p>&copy;Copyright 2021 All Rights reserved by our amazing team.</p>
