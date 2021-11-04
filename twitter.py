@@ -56,11 +56,6 @@ def generate_graph(ctx, e):
 def on_search(ctx, e):
    ctx.keyword = e.data['search']
 
-def add_request_handlers(httpd):
-   httpd.add_route('/graph', GenerateEvent('intervalbtn'), methods=['POST'])
-
-   httpd.add_content('/lib/', 'twitter_static/lib')
-   httpd.add_content('/style/', 'twitter_static/style')
 
 @event('intervalbtn')
 def set_interval(ctx,e):
