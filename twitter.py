@@ -17,14 +17,14 @@ def setup(ctx, e):
 #    start_offline_tweets('test.txt', time_factor=1, event_name='chirp')
    ctx.count = 0.0001
    ctx.interval = datetime.datetime.now()
-   ctx.keyword = None
+   ctx.keyword = 'express'
    start_offline_tweets('tweets.txt', time_factor=1, event_name='tweetgraph')
 
 @event('chirp')
 def tweet(ctx, e):
    # we receive a tweet
    tweet = e.data
-   if not ctx.keyword or ctx.keyword.lower() in tweet['text'].lower():
+   if not ctx.keyword or ctx.keyword.lower() in tweet['text'].lower() or ctx.keyword.lower() in tweet['user']['screen_name'].lower() or ctx.keyword.lower() in tweet['user']['name'].lower():
       # parse date
       time = datetime.datetime.strptime(tweet['created_at'], '%a %b %d %H:%M:%S %z %Y')
 
