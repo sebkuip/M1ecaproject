@@ -152,7 +152,7 @@
 
 
         $("textarea").keypress(function (e) {
-    if(e.which === 13 && !e.shiftKey) {
+    if(e.which === 13) {
         e.preventDefault();
     
         $(this).closest("form").submit();
