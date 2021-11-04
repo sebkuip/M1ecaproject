@@ -17,7 +17,7 @@ def setup(ctx, e):
 #    start_offline_tweets('test.txt', time_factor=1, event_name='chirp')
    ctx.count = 0.0001
    ctx.interval = datetime.datetime.now()
-   ctx.keyword = 'express'
+   ctx.keyword = None
    start_offline_tweets('tweets.txt', time_factor=1, event_name='tweetgraph')
 
 @event('chirp')
