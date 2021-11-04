@@ -159,7 +159,9 @@ header{
 
 #search_terms{
     height: 200px;
-    width: 300px;
+    width: 350px;
+    margin-left: 5%;
+    margin-right: 10%;
 }
 
 
@@ -332,16 +334,16 @@ div.jqcloud a {
     text-decoration: none;
   }
   
-  div.jqcloud span.w10 { font-size: 550%; }
-  div.jqcloud span.w9 { font-size: 500%; }
-  div.jqcloud span.w8 { font-size: 450%; }
-  div.jqcloud span.w7 { font-size: 400%; }
-  div.jqcloud span.w6 { font-size: 350%; }
-  div.jqcloud span.w5 { font-size: 300%; }
-  div.jqcloud span.w4 { font-size: 250%; }
-  div.jqcloud span.w3 { font-size: 200%; }
-  div.jqcloud span.w2 { font-size: 150%; }
-  div.jqcloud span.w1 { font-size: 100%; }
+  div.jqcloud span.w10 { font-size: 400%; }
+  div.jqcloud span.w9 { font-size: 370%; }
+  div.jqcloud span.w8 { font-size: 340%; }
+  div.jqcloud span.w7 { font-size: 310%; }
+  div.jqcloud span.w6 { font-size: 280%; }
+  div.jqcloud span.w5 { font-size: 250%; }
+  div.jqcloud span.w4 { font-size: 220%; }
+  div.jqcloud span.w3 { font-size: 190%; }
+  div.jqcloud span.w2 { font-size: 160%; }
+  div.jqcloud span.w1 { font-size: 130%; }
   
   /* colors */
   
