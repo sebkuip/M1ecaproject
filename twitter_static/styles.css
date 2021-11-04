@@ -320,4 +320,8 @@ p {
     font-size: 12px;
     margin-left: 20%;
     z-index: 100;
+    height: fit-content;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
 }
