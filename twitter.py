@@ -59,5 +59,5 @@ def on_search(ctx, e):
 
 @event('intervalbtn')
 def set_interval(ctx,e):
-   print(e.data['intervalbutton'])
+   print(e)
    ctx.intervalgraph = int(e.data['intervalbutton'])

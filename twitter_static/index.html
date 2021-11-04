@@ -111,19 +111,26 @@
             
                 <div class="graph">
                     <h1 style="display: inline; width: fit-content; margin-left: 10px;">Graph</h1>
-                    <div id= "intervalbtns" style="width: fit-content; display: inline; position: absolute; right: 20px;">
+                    <div id= "intervalbtns1" style="width: fit-content; display: inline; position: absolute; right: 100px;">
                         <form>
                             <input type="submit" name="intervalbutton" id="btn1" class="intervalbutton" value="1">
-                            <input type="submit" name="intervalbutton" id="btn2" class="intervalbutton" value="3">
-                            <input type="submit" name="intervalbutton" id="btn3" class="intervalbutton" value="5">
-                            <input type="submit" name="intervalbutton" id="btn4" class="intervalbutton" value="10">
                         </form>
-                        <script>
-                            block('#intervalbtns').form({
-                                target: '/graph'
-                            });
-                        </script>
                     </div>
+                    <script>
+                        block('#intervalbtns1').form({
+                            target: '/graph'
+                        });
+                    </script>
+                    <div id= "intervalbtns3" style="width: fit-content; display: inline; position: absolute; right: 20px;">
+                        <form>
+                            <input type="submit" name="intervalbutton" id="btn3" class="intervalbutton" value="3">
+                        </form>
+                    </div>
+                    <script>
+                        block('#intervalbtns3').form({
+                            target: '/graph'
+                        });
+                    </script>
                     <div id="graph0" class="grid_8 vert_4"></div>
 
                     <script>
