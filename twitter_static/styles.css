@@ -315,3 +315,9 @@ p {
   textarea:focus, input:focus{
     outline: 0;
 }
+
+.tweets{
+    font-size: 12px;
+    margin-left: 20%;
+    z-index: 100;
+}
