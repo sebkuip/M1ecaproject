@@ -311,6 +311,9 @@ p {
     margin-top: 8px;
   }
 
+  .intervalbutton:hover {
+    background-color: #005485;
+  }
   textarea {
     resize: none;
   }
